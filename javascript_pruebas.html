@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pruebas Javascript</title>
+    <script>
+
+        function Caja(ancho, largo, alto) {
+            function volumen(a,b,c){
+                return a*b*c;
+            }
+            this.volumenCaja = volumen(ancho,largo,alto);
+        }
+        var contenedor = new Caja(5,4,3);
+
+        function data_de_creacio(dia, mes, any){
+            function creacio(a,b,c){
+                return a,b,c;
+            }
+            this.d_creacio = creacio(dia,mes,any);
+        }
+        var guardar_data_de_creacio = new data_de_creacio(4,3,1999);
+    </script>
+</head>
+<body>
+
+    <input type="button" value="CajaBien" 
+    onclick="alert('Volumen = ' + contenedor.volumenCaja);" />
+    
+    <input type="button" value="DataCreacio"
+    onclick="alert('Data De Creacio = ' + guardar_data_de_creacio.d_creacio);" />
+
+</body>
+</html>
