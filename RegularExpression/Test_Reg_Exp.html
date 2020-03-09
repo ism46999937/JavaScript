@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Search for an "e" in the next paragraph:</p>
+
+<p id="p01">The best things in life are free!</p>
+
+<p id="demo"></p>
+
+<script>
+text = document.getElementById("p01").innerHTML; 
+document.getElementById("demo").innerHTML = /e/.test(text);
+</script>
+
+</body>
+</html>
