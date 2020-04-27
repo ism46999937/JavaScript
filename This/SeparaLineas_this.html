@@ -1,0 +1,34 @@
+<body>
+    <section>
+        <article>
+                <p id="demo">
+                    
+                </p>
+        </article>
+
+        <article>
+                <p id="demo">
+
+                </p>
+        </article>
+    </section>
+    <button onclick="">ACEPTAR</button>
+    <script>
+        var parrafo={
+            fullParrafo: function(){
+                return this.PrimeraLinea + "<br>" +
+                 this.SegunaLinea + "<br>" +
+                 this.TerceraLinea + "<br>" +
+                 this.CuartaLinea;
+                }
+        }
+        var parrafo1 = {
+            PrimeraLinea:"Hola soy tu peor pesadilla",
+            SegunaLinea:"Parece que no pero se cocinar tortilla",
+            TerceraLinea:"Además de disfrutar en la orilla",
+            CuartaLinea:"Puedo Cantarte a la orejilla."
+        }
+        var x = parrafo.fullParrafo.call(parrafo1);
+        document.getElementById("demo").innerHTML=x;
+    </script>
+</body>
