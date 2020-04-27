@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+                "use strict";
+                var capitulo = ["CAPITULO 1", "CAPITULO 2", "CAPITULO 3", "CAPITULO 4", "CAPITULO 5", "CAPITULO 6"]
+                var i = 0;
+                var texto = "";
+                var secciones = ["Seccion 1","Seccion 2","Seccion 3","Seccion 4","Seccion 5","Seccion 6"];
+                var s = 0;
+                while (capitulo[i]){
+                    texto += capitulo[i] + "<br>";
+                    for(s=0;s<6;s++){
+                        if (s==2){
+                            texto += secciones[s] + " (parte nuclear)" + "<br>";
+                        }
+                        else{
+                            texto += secciones[s] + "<br>";
+                        }
+                    }
+                    i++;
+                }
+                document.getElementById("demo").innerHTML = texto;
+            </script>
+    </body>
+</html>
