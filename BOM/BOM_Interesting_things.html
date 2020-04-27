@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        //ap1
+        var URL = window.location;
+        var texto = "";
+            texto += "La URL actual es: " + URL;
+            document.getElementById("demo").innerHTML=texto;
+        //ap2
+        var protocolo = location.protocol;
+            if(location.protocol == "http:"){
+                protocolo += " Paso de la seguridad para lo que estoy haciendo";
+            }
+            else{
+                protocolo += " Vaya!!";
+            }
+            document.getElementById("demo2").innerHTML=protocolo;
+        //ap3
+        document.getElementById("demo3").innerHTML = "cookiesEnabled is " + navigator.cookieEnabled;
+        //ap4
+        document.getElementById("demo4").innerHTML = "navigator.appName is " + navigator.appName;
+        document.getElementById("demo5").innerHTML = navigator.appVersion;
+        //ap5
+        document.getElementById("demo6").innerHTML=navigator.language;
+        //ap6
+        document.getElementById("demo7").innerHTML=navigator.javaEnabled();
+    </script>
+</body>
+</html>
