@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+                "use strict";
+                var texto = "";
+                var i = 1;
+                do{
+                    if (i%2==0) {
+                        texto += "<br>Esta es la línea " + i;
+                    }
+                    i++;
+                }while(i<20);
+                document.getElementById("demo").innerHTML = texto;
+            </script>
+    </body>
+</html>
